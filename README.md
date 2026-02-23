@@ -1,6 +1,6 @@
 # prEEG: EEG Dominant Band Classifier (C++/ONNX)
 
-Minimal end-to-end example of deploying a machine learning model for EEG band classification in C++ using ONNX Runtime.
+C++ EEG dominant band classifier using ONNX Runtime for real-time inference.
 
 - Reads a 1-column CSV signal (`N=1024`, 4 s at 256 Hz)
 - Computes relative bandpower features:
