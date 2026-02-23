@@ -8,6 +8,22 @@ C++ EEG dominant band classifier using ONNX Runtime for real-time inference.
 - Runs ONNX Runtime inference from a scikit-learn MLP exported to ONNX
 - Prints 5-class probabilities and benchmarks latency
 
+## Dependencies
+### C++ Runtime
+- C++17 compatible compiler (tested with MSVC / Visual Studio 2022)
+- CMake ≥ 3.20
+- ONNX Runtime (CPU build), https://onnxruntime.ai/
+You must provide ONNXRUNTIME_ROOT pointing to the extracted ONNX Runtime directory.
+### Python
+- Python ≥ 3.9
+- numpy
+- scikit-learn
+- skl2onnx
+Install Python dependencies:
+```powershell
+pip install numpy scikit-learn skl2onnx
+```
+
 ## Classes
 - `0=delta`
 - `1=theta`
