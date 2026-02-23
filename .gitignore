@@ -30,3 +30,36 @@
 *.exe
 *.out
 *.app
+
+# CMake / MSVC build outputs
+/build/
+/out/
+/bin/
+/obj/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+*.vcxproj
+*.vcxproj.filters
+*.sln
+*.tlog
+*.recipe
+*.lastbuildstate
+*.ilk
+*.idb
+*.pdb
+*.exp
+
+# IDE local state
+.vs/
+.vscode/*.db
+.vscode/ipch/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Keep
+!model/*.onnx
+!data/tests/
+!data/tests/**
