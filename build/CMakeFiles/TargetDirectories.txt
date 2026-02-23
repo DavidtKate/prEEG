@@ -1,3 +1,0 @@
-D:/Projects/AI/prEEG/build/CMakeFiles/eeg_infer.dir
-D:/Projects/AI/prEEG/build/CMakeFiles/ALL_BUILD.dir
-D:/Projects/AI/prEEG/build/CMakeFiles/ZERO_CHECK.dir

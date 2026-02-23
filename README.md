@@ -56,7 +56,7 @@ Generated under `data/tests/`:
 ## Run Inference
 
 ```powershell
-.\build\Release\eeg_infer.exe --model model/eeg_mlp_5class.onnx --csv data/tests/alpha_dominant.csv --fs 256 --benchmark 200
+.\build\Release\eeg_infer.exe --model model/eeg_mlp.onnx --csv data/tests/alpha_dominant.csv --fs 256 --benchmark 200
 ```
 
 Example output shape:
