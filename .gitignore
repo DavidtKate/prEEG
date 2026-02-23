@@ -63,3 +63,10 @@ __pycache__/
 !model/*.onnx
 !data/tests/
 !data/tests/**
+
+# Additional
+.vscode/c_cpp_properties.json
+.vscode/extensions.json
+.vscode/settings.json
+prEEG.csproj
+Program.cs
