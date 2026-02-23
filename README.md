@@ -1,14 +1,14 @@
-# prEEG: 5-Class EEG Band Classifier (Synthetic Demo)
+# prEEG: EEG Dominant Band Classifier (C++/ONNX)
 
-This project demonstrates a small end-to-end EEG-like inference pipeline:
+C++ EEG dominant band classifier using ONNX Runtime for real-time inference.
 
-- Read a 1-column CSV signal (`N=1024`, 4 s at 256 Hz)
-- Compute relative bandpower features:
-  - `delta`, `theta`, `alpha`, `beta`, `gamma` (approximately summing to 1)
-- Run ONNX Runtime inference from a scikit-learn MLP exported to ONNX
-- Print 5-class probabilities and benchmark latency
+- Reads a 1-column CSV signal (`N=1024`, 4 s at 256 Hz)
+- Computes relative bandpower features:
+  - `delta`, `theta`, `alpha`, `beta`, `gamma` (~equals 1)
+- Runs ONNX Runtime inference from a scikit-learn MLP exported to ONNX
+- Prints 5-class probabilities and benchmarks latency
 
-Classes:
+## Classes
 - `0=delta`
 - `1=theta`
 - `2=alpha`
@@ -31,7 +31,7 @@ python scripts/train_export_onnx.py
 ```
 
 This writes:
-- `model/eeg_mlp_5class.onnx`
+- `model/eeg_mlp.onnx`
 
 Export uses:
 - `options={id(pipe): {"zipmap": False}}`
@@ -76,5 +76,4 @@ Warning: Low confidence / mixed spectrum (top_prob=..., dominance_ratio=...)
 ## Notes
 
 - Training data in this repo is synthetic and intended for demonstration only.
-- Replace synthetic generation in `scripts/train_export_onnx.py` with real EEG data + labels for real-world use.
-- Keep feature extraction consistent between training and inference (same band definitions and preprocessing).
+- Replace the synthetic generation in `scripts/train_export_onnx.py` with real EEG data + labels for real-world use.
