@@ -1,0 +1,10 @@
+^D:\PROJECTS\AI\PREEG\BUILD\CMAKEFILES\5B733224E4828DCB904E8F9EF39F70AE\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/AI/prEEG -BD:/Projects/AI/prEEG/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Projects/AI/prEEG/build/eeg_demo.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
